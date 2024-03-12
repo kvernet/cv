@@ -1,0 +1,521 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 3.0 (September 3, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%!TEX program = xelatex
+% NOTE: this template must be compiled with XeLaTeX rather than PDFLaTeX
+% due to the custom fonts used. The line above should ensure this happens
+% automatically, but if it doesn't, your LaTeX editor should have a simple toggle
+% to switch to using XeLaTeX.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\input{settings}
+
+\documentclass[
+	10pt, % Default font size, can be between 8pt and 12pt
+]{FreemanCV}
+
+\columnratio{0.46, 0.54} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content 
+
+% Headers and footers can be added with the following commands: \lhead{}, \rhead{}, \lfoot{} and \rfoot{}
+% Example right footer:
+%\rfoot{\textcolor{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin two-column mode
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CURRICULUM VITAE TITLE
+%----------------------------------------------------------------------------------------
+
+\parbox[][0.11\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
+	\centering % Horizontally center text
+	
+	{\sffamily\Huge Kinson VERNET} % Your name
+	
+	%\medskip % Vertical whitespace
+	
+	%{\cursivefont\Huge\textcolor{headings}{Curriculum Vitae}}
+	
+	%\vfill % Push content to the top of the box
+}
+
+%-------------------------------------------
+% COMPETENCES CLEF
+%-------------------------------------------
+\section{Comp\'etences m\'etier}
+\jobentry
+	{} % Duration
+	{} % FT/PT (full time or part time)
+	{} % Employer
+	{}
+	{\textbf{Recherche, Physique, Informatique}}\\
+	{	
+	-- Simulation, Analyse de données, Modélisation\\
+	-- Problème d’inversion, Monte Carlo, Programmation linéaire\\
+	-- Algorithmique, Programmation informatique\\
+	-- Base de données relationnelles\\
+	-- Développement web et applications mobiles
+	} % Description
+\medskip
+
+\section{Comp\'etences techniques}
+\jobentry
+	%{} % Duration
+	{} % FT/PT (full time or part time)
+	{} % Employer
+	{}
+	{}
+	{
+	-- Simulation: Geant4, FreeCAD\\
+	-- Analyse de données: Python, ROOT CERN\\
+	-- Langages de programmation: C, C++, C\#, Java\\
+	-- Développement web: HTML, CSS, JavaScript, PHP, MySQL\\
+	-- Systèmes d'exploitation: Linux, Windows\\
+	-- Autres: Bash, Git, LaTeX, Lua, Markdown, SGE/Slurm
+	} % Description
+\medskip
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Expérience professionnelle}
+
+% Each job is added with a \jobentry command. Below is an empty one to use as a template:
+%\jobentry
+%	{} % Duration
+%	{} % FT/PT (full time or part time)
+%	{} % Employer
+%	{} % Job title
+%	{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+%------------------------------------------------
+
+
+\jobentry
+	{06/2023 -- 02/2024} % Duration
+	{Temps plein} % FT/PT (full time or part time)
+	{Postdoc -- Université Clermont Auvergne} % Employer
+	{}
+	{\textbf{Analyse de données recueillies sur les volcans Masaya, Etna et Vulcano 2021 et 2022}}\\
+	{
+		Durant ce postdoc, j'ai r\'eussi \`a mod\'eliser le d\'etecteur avec FreeCAD pour ensuite l'injecter dans la simulation de Geant4. Le langage Rust a \'et\'e utilis\'e pour le transport des radiations et Python pour l'analyse des donn\'ees.
+	}
+\medskip % Extra vertical whitespace before the next section
+\medskip % Extra vertical whitespace before the next section
+
+
+\jobentry
+	{10/2019 -- 12/2022} % Duration
+	{Temps plein} % FT/PT (full time or part time)
+	{Doctorat -- Université Clermont Auvergne} % Employer
+	{}
+	{\textbf{Imagerie de densité 3D des volcans par muographie}}\\
+	{
+		J'avais pour mission principale de d\'evelopper une m\'ethode permettant de radiographier un volcan pour pouvoir pr\'edire des al\'eas volcaniques. J'ai tent\'e de prendre en compte la plupart des effets syst\'ematiques qui peuvent affecter la radiographie des volcans. Enfin, cette m\'ethode permet de radiographier un volcan avec une incertitude statistique ne d\'epassant pas une valeur seuil et \`a meilleure r\'esolution spatiale possible.
+	}
+\medskip % Extra vertical whitespace before the next section
+\medskip % Extra vertical whitespace before the next section
+
+
+\jobentry
+	{Depuis Jan 2019} % Duration
+	{Temps plein} % FT/PT (full time or part time)
+	{Enseignant -- Université d’État d’Haïti} % Employer
+	{}
+	{\textbf{Algorithmique \& programmation en C/C++}}\\
+	{
+		J'enseigne l'algorithmique et l'introduction \`a la programmation en C (structure de donn\'ees, allocation dynamique de la m\'emoire) et la programmation orrient\'ee objet en C++. Cette exp\'erience m'a appris comment transmettre le savoir \`a des personnes de capacit\'es diff\'erentes et \'a \^etre plus tol\'erant.
+	}
+\medskip % Extra vertical whitespace before the next section
+\medskip % Extra vertical whitespace before the next section
+%------------------------------------------------
+
+\jobentry
+	{Oct 2014 -- Jul 2016} % Duration
+	{Temps partiel} % FT/PT (full time or part time)
+	{Enseignant -- Université Fond'oies} % Employer
+	{}
+	{\textbf{Mathématiques, physique et recherche opérationnelle}}\\
+	{
+		Fonctions, dérivées, intégrales, matrices \\
+		Équations différentielles ordinaires\\
+		Cinématique et dynamique newtonienne\\
+		Statistiques, concepts de modélisation\\
+		Algorithme de simplex et problèmes d’optimisation
+	}
+\medskip % Extra vertical whitespace before the next section
+\medskip % Extra vertical whitespace before the next section
+%------------------------------------------------
+
+\jobentry
+	{Féb 2012 -- Jul 2015} % Duration
+	{Temps plein} % FT/PT (full time or part time)
+	{Programmeur -- Usine sucrière Jean Léopold Dominique de Darbonne} % Employer
+	{}
+	{\textbf{Développement de logiciels Windows (C\#, MySQL)}}\\
+	{
+		Durant ce poste, j'ai d\'ev\'elopp\'e des applications Windows \`a utiliser dans toute l'usine. Ce poste m'a permis de parfaire mes comp\'etences en programmation orrient\'ee objet et en gestion de bases de donn\'ees relationnelles. 
+	}
+\medskip % Extra vertical whitespace before the next section
+\medskip % Extra vertical whitespace before the next section
+%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+Sur demande
+
+\comment{
+
+%\textit{References available on request} % Uncomment if you'd rather not include references and remove the section below
+
+%------------------------------------------------
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Valentin NIESS}}{}
+	\tableentry{Position}{Chargé de recherche CNRS}{}
+	\tableentry{Employeur}{\href{http://clrwww.in2p3.fr/}{\lpc}}{}
+	\tableentry{Email}{\href{mailto:niess@in2p3.fr}{niess@in2p3.fr}}{}
+	\tableentry{Mobile}{+33(0) 6 44 22 62 66}{}
+	%------------------------------------------------
+	
+	\\ % Additional vertical whitespace between the references
+		
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Cristina CARLOGANU}}{}
+	\tableentry{Position}{Directrice de recherche CNRS}{}
+	\tableentry{Employeur}{\href{http://clrwww.in2p3.fr/}{\lpc}}{}
+	\tableentry{Email}{\href{mailto:carlogan@in2p3.fr}{carlogan@in2p3.fr}}{}
+	%\tableentry{Mobile}{ +33(0) 7 86 49 21 59}{}
+	
+	%------------------------------------------------
+	
+	\\ % Additional vertical whitespace between the references
+	
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Patrick NEDELEC}}{}
+	\tableentry{Position}{Professeur}{}
+	\tableentry{Employeur}{\href{https://www.univ-lyon1.fr}{\ucbl}}{}
+	\tableentry{Email}{\href{mailto:p.nedelec@ipnl.in2p3.fr}{p.nedelec@ipnl.in2p3.fr}}{}
+	%\tableentry{Mobile}{ +33(0) 6 77 90 01 73}{}
+	
+	
+\end{supertabular}
+
+\medskip % Extra vertical whitespace before the next section
+
+}
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the second (right) column
+
+%----------------------------------------------------------------------------------------
+%	COLORED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
+	\colorbox{shade}{ % Create colored box and specify background color
+		\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			%\raisebox{-1pt}{\faHome} & 133 Bvd Lafayette, 63000 Clermont-Ferrand, France \\ % Address
+			%\raisebox{-1pt}{\faPhone} & (+33) 7 49 55 56 74 \\ % Phone number
+			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:kingvernet@yahoo.fr}{kingvernet@yahoo.fr} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://kvernet.com}{https://kvernet.com} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/kvernet}{https://github.com/kvernet} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/kvernet}{https://www.linkedin.com/in/kvernet} \\ % LinkedIn profile
+			% See fontawesome.pdf in the Fonts folder for all icons you can use
+		\end{supertabular}
+	}
+	\vfill % Push content to the top of the box
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Formation} 
+
+% Each qualification entry is added with a \qualificationentry command. Below is an empty one to use as a template:
+%\qualificationentry
+%	{} % Duration
+%	{} % Degree
+%	{} % Honors, achievements or distinctions (e.g. first class honors)
+%	{} % Department
+%	{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	\qualificationentry
+		{2019 -- 2022} % Duration
+		{Doctorat} % Degree
+		{} % Honors, achievements or distinctions (e.g. first class honors) - PhD in particle physics
+		{Particules, Interactions, Univers} % Department
+		{\uca} % Institution	
+	%------------------------------------------------	
+	\qualificationentry
+		{2016-2018} % Duration
+		{Master I \& II} % Degree
+		{} % Honors, achievements or distinctions (e.g. first class honors) - Master I \& II diploma
+		{Atomes, molécules, matériaux et environnement} % Department
+		{\ueh} % Institution	
+	%------------------------------------------------	
+	\qualificationentry
+		{2006 -- 2011} % Duration
+		{Génie électromécanique} % Degree
+		{} % Honors, achievements or distinctions (e.g. first class honors) - Engineering diploma
+		{\fds} % Department
+		{\ueh} % Institution
+\end{supertabular}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+\section{Stages de recherche}
+\jobentry
+	{Avr -- Sep 2019} % Duration
+	{Temps plein} % FT/PT (full time or part time)
+	{\lpc} % Employer
+	{}
+	{\textbf{Radiographie des volcans}}\\
+	{
+		Pendant ce stage, j'ai commenc\'e \`a \'etudier quelques effets syst\'ematiques en radiographie des volcans. J'ai r\'eussi \`a d\'eterminer le site de déploiement optimal par simulation Monte Carlo \`a rebours.
+	}
+\medskip % Extra vertical whitespace before the next section
+\medskip % Extra vertical whitespace before the next section
+%------------------------------------------------
+
+\jobentry
+	{Mai -- Juil \& Sep -- Déc 2018} % Duration
+	{Temps plein} % FT/PT (full time or part time)
+	{\ipnl \,\& \cern} % Employer
+	{}
+	{\textbf{Détection de l'antimatière}}\\
+	{
+		J'avais pour mission d'optimiser la d\'etection de l'antimati\`ere dans l'exp\'erience AEgIS (Antihydrogen Experiment: Gravity, Interferometry, Spectroscopy) par la simulation et l'analyse de donn\'ees. J'ai r\'eussi \`a montrer des co\"incidences de d\'etection entre notre trajectographe \`a muons et les scintillateurs.
+	}
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Concours}
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2019}{\textbf{Bourse de l'\'Ecole Doctorale Sciences Fondamentales}}{}
+	\tableentry{}{\textit{\uca}}{}
+	\tableentry{}{}{}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Communication scientifique}
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	\tableentry{Conférence}{Imagerie de densité des volcans}{}
+	\tableentry{}{JRJC -- Oct, 2021 (\href{https://indico.in2p3.fr/event/24590/contributions/100391}{lien vers ma contribution})}{}
+	
+	%------------------------------------------------
+	
+	\tableentry{Journées scientifiques}{15 minutes de communication scientifique}{}
+	\tableentry{}{École doctorale -- Déc, 2021}{}
+	
+	%------------------------------------------------
+	
+	\tableentry{Séminaire de doctorat}{Imagerie de densité des volcans}{}
+	\tableentry{}{Laboratoire de Physique de Clermont -- Fév, 2022}{}	
+\end{supertabular}
+
+
+%----------------------------------------------------------------------------------------
+%	International conference / Summer school
+%----------------------------------------------------------------------------------------
+
+\section{Ecole d'été}
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	\tableentry{École de statistiques}{IN2P3 School of Statistics 2021}{}
+	\tableentry{}{\href{https://indico.in2p3.fr/event/20220}{Lien indico}}{}
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Compétences en matière de recherche}
+Veille scientifique et méthodologique,
+Analyse critique de production scientifique,
+Capacité d'accepter la critique, démonstration d'humilité, doute scientifique et éthique,
+Méthodes de reproductibilité et résultats fiables,
+Rigueur, intégrité scientifique, traçabilité et validité des résultats,
+Transfert, valorisation et discussion des résultats de mes recherches,
+Capacité à travailler en équipe,
+Capacité d'adaptation
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+
+\section{Publications}
+
+%------------------------------------------------
+
+Valentin Niess, Kinson Vernet , Luca Terray (en cours). Goupil: A revertible Monte Carlo engine for low energy gamma rays.
+
+\medskip % Vertical whitespace
+
+%Kinson Vernet et al. (en cours). A kernel-based approach to reconstruct volcano density with optimal spatial resolution and statistical uncertainty threshold.
+
+%\medskip % Vertical whitespace
+
+Kinson Vernet (2022). 3D Volcano Imaging Using Transmission Muography. \textit{JRJC 2021. Book of Proceedings. hal-03832762v1}.
+
+\medskip % Vertical whitespace
+
+
+
+
+
+
+
+\comment{
+
+
+Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.
+
+\medskip % Vertical wAuvergne-Rhône-Alpeshitespace
+
+%------------------------------------------------
+
+% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% Example \doipublication{} command to add another publication:
+
+%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% All four parameters are required (can be empty though)
+% A value of "firstauthor" in the third parameter will output the DOI in bold
+% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+%------------------------------------------------
+
+\subsection{Publications by DOI}
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\doipublication{1986}{10.1139/v86-297}{}{}
+	\doipublication{}{10.1103/PhysRevA.34.2329}{}{spaceafter}
+	
+	%------------------------------------------------
+	
+	& \textit{First author publications in} \textbf{bold}\\
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+
+}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol} % End two-column mode
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
