@@ -1,6 +1,8 @@
 COMPILER= xelatex
 
-.PHONY: en fr
+.PHONY: en fr all
+
+all: en fr
 
 en: cv-en.pdf
 
