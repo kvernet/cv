@@ -13,7 +13,8 @@ define build_paper
 	cp -r $^ build-$1
 	cd build-$1 && \
 	$(COMPILER) cv-$1.tex && \
-	mv cv-$1.pdf ..
+	mkdir -p ../pdf/$1 && \
+	mv cv-$1.pdf ../pdf/$1/CV.pdf
 endef
 
 SRC_EN= docs/cv-en.tex \
@@ -34,4 +35,4 @@ cv-fr.pdf: $(SRC_FR) $(FIGURES)
 	$(call build_paper,fr)
 
 clean:
-	rm -rf build-en cv-en.pdf build-fr cv-fr.pdf
+	rm -rf build-* pdf
